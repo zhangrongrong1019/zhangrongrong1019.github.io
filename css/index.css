@@ -1,8 +1,8 @@
 
 .contenter{
-    width: 7.44rem;
+    width: 95%;
     background: #ffffff;
-    padding:0.5rem 0.31rem;
+    padding:0.5rem 0rem 0.5rem 5%;
 }
 .myAPP{
     width: 6.9rem;
@@ -35,8 +35,8 @@
 .APPIcon{
     width: 1.3rem;
     height: 1.78rem;
-    margin-right: 0.56rem;
-    margin-bottom: 0.3rem;
+    margin-right: 0.46rem;
+    margin-bottom: 0.4rem;
     position: relative;
 }
 .APPIcon .APPImg{
@@ -63,7 +63,7 @@
     text-indent:0.1rem ;
 }
 .recommendApp{
-    padding: 0.4rem 0.3rem;
+    /*padding: 0.4rem 0rem 0.4rem 0.3rem;*/
     margin-bottom: 0.1rem;
 }
 .recommendApp p:first-child{
@@ -75,6 +75,7 @@
   position: fixed;
     top: 0.54rem;
     z-index: 10;
+    box-shadow: 0rem 0.2rem 0.3rem rgba(0,0,0,0.2);
 }
 .deleteIcon{
     width: 0.42rem;
@@ -94,6 +95,7 @@
     top: -0.06rem;
     right: -0.06rem;
 }
+
 .alreadyAdd{
     width: 0.42rem;
     height: 0.42rem;
@@ -102,4 +104,20 @@
     position: absolute;
     top: -0.06rem;
     right: -0.06rem;
+}
+.alertModel{
+    line-height: 0.88rem;
+    border: 1px solid #4a4a4a;
+    font-size: 0.32rem;
+    z-index: 999;
+    width:3.8rem;
+    height: 0.88rem;
+    left: 50%;
+    top: 50%;
+    background: #4a4a4a;
+    color: #fff;
+    margin-left: -2rem!important;
+    margin-top: 0;
+    position: fixed!important;
+    border-radius: 0.1rem;
 }

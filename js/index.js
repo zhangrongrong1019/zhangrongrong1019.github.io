@@ -17,6 +17,18 @@ function getTopHeight(){
 
 }
 
+function show1(){
+    $('#popDiv').show();
+    var t = setTimeout(function (){
+        $('#popDiv').hide();
+    },1000);
+}
+
+
+
+
+
+
 $(function(){
     getTopHeight()
 
@@ -67,7 +79,16 @@ $(function(){
                 }
             }
 
-            loadListener();
+            var APPIconNum = $(".APPIconBox .APPIcon")
+            if(APPIconNum.length>3){
+                $(".addIcon").unbind("click");
+                $(".addIcon").click(function(){
+                    show1();
+                })
+
+            }else{
+                loadListener();
+            }
         }else{
             /*点击完成按钮*/
             $(this).text("编辑");
@@ -84,17 +105,33 @@ $(function(){
 function loadListener(){
     /*点击加号*/
     $(".addIcon").off("click").on("click",function(){
+
+
         $(this).addClass("alreadyAdd").removeClass("addIcon");
         $(this).parent().clone().appendTo($(".APPIconBox"))
         $(".APPIconBox .APPIcon p").next().addClass("deleteIcon").removeClass("alreadyAdd");
         $(this).unbind("click");
         var APPIconNum = $(".APPIconBox .APPIcon")
-        if(APPIconNum.length>10){
+        if(APPIconNum.length>3){
             $(".addIcon").unbind("click");
             $(".addIcon").click(function(){
-                alert("最多添加11个应用")
+                show1();
             })
-
+            $(".deleteIcon").off("click").on("click",function(){
+                loadListener();
+                var thisUrlId=$(this).parent().attr("urlId");
+                for(var j=0;j<recommendAppIcon.length;j++){
+                    var recommendAppUrlId=recommendAppIcon.eq(j).attr("urlId");
+                    /*  console.log(thisUrlId);*/
+                    console.log(recommendAppUrlId);
+                    if(recommendAppUrlId === thisUrlId){
+                        /*console.log("ok!");*/
+                        recommendAppIcon.eq(j).children("p").next().addClass("addIcon").removeClass("alreadyAdd");
+                    }}
+                $(this).parent().remove();
+                console.log($(this).parent());
+                getTopHeight();
+            });
         }else{
             loadListener();
         }
@@ -105,6 +142,7 @@ function loadListener(){
     var recommendAppIcon = $(".recommendApp .APPIcon");
     /*点击减号*/
     $(".deleteIcon").off("click").on("click",function(){
+        loadListener();
         var thisUrlId=$(this).parent().attr("urlId");
         for(var j=0;j<recommendAppIcon.length;j++){
             var recommendAppUrlId=recommendAppIcon.eq(j).attr("urlId");
@@ -115,6 +153,7 @@ function loadListener(){
                 recommendAppIcon.eq(j).children("p").next().addClass("addIcon").removeClass("alreadyAdd");
             }}
         $(this).parent().remove();
+        console.log($(this).parent());
         loadListener();
         getTopHeight();
     });
