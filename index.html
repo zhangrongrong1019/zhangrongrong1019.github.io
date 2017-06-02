@@ -10,20 +10,20 @@
 <body>
 <header>我是Header</header>
 <button>广告位</button>
-<button class="key">key码激活</button>
+<button class="key" onclick="openNewApp()">key码激活</button>
 <button>趣运动</button>
-
 <script type="text/javascript" src="../js/jquery-1.11.3.js"></script>
 <script type="text/javascript">
-    $(".key").click(function(){
-        methodname();
-    })
-   /* function openApp() {
-        window.open("http://www.jb51.net/")
-    }*/
-    function methodname(){
+
+    function openNewApp(){
         openApp(url="http://www.jb51.net/")
     }
+    /* function openApp() {
+     window.open("http://www.jb51.net/")
+     }*/
+    /* $(".key").click(function(){
+     methodname();
+     })*/
 </script>
 </body>
 </html>
