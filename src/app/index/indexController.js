@@ -8,7 +8,8 @@ angular.module('app')
 
 		$scope.showModel=false;
 		$scope.getVerificationCode=function(){
-			$scope.showModel=true;
+
+		/*	$scope.showModel=true;
 			var uuid=setUuid(32, 16);
 			$scope.$watch('one', function (value) {
 				if (value) {
@@ -63,7 +64,7 @@ angular.module('app')
 					$(".modelBox").find('input').css("border", "1px red solid");
 					$scope.isShow = true;
 					//验证码输入完整
-					/*		ajaxRquest.getData("URL",{
+					/!*		ajaxRquest.getData("URL",{
 					 'uuidParam':uuid
 					 }).then(function(msg){
 					 if(msg.resCode === "00000"){
@@ -72,10 +73,10 @@ angular.module('app')
 					 //验证码输入错误
 
 					 }
-					 })*/
+					 })*!/
 
 				}
-		}}
+		}*/}
 		$scope.closeModel=function(){
 			$scope.showModel=false;
 		}
