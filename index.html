@@ -14,17 +14,33 @@
 <button>趣运动</button>
 <script type="text/javascript" src="../js/jquery-1.11.3.js"></script>
 <script type="text/javascript">
+    /*web_webactivty.addJavascriptInterface(new MyJs(), "Hstation");
+    /!*Hstation*!/
+    window.Hstation.getData()*/
+     function getUrlParam(name) {
+        var paramIndex=window.location.href.indexOf('?')
+        if(paramIndex!=-1){
+            var parameter= window.location.href.substring(paramIndex)
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+            var r = parameter.match(reg); //匹配目标参数
+        }
+
+        if (r != null) return unescape(r[2]); return null; //返回参数值
+    }
+
+
 
     function openNewApp(){
-
-        openApp(url="lincombfinance://params?name=test")
+        var webType = getUrlParam("webType");
+        console.log(webType)
+        if(webType =="wkweb"){
+            window.webkit.messageHandlers.HYZ_Model.postMessage({body: 'lincombfinance://Service/kcode'});
+        }else{
+           /* alert(webType)*/
+           openApp(url="lincombfinance://Service/kcode")
+        }
     }
-    /* function openApp() {
-     window.open("http://www.jb51.net/")
-     }*/
-    /* $(".key").click(function(){
-     methodname();
-     })*/
+        /*openApp(url="lincombfinance://params?name=test")*/
 </script>
 </body>
 </html>
