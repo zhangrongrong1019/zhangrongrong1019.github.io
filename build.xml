@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="test" basedir="." default="127.to.206">
+	<!--版本号-->
+	<property name="version" value="1.0" />
+	<property name="year" value="2014" />
+
+	<!--项目发布目录 -->
+	<property name="servicedir" value="/data/usr/local/nginx/html/iFengChao-Hui-UI"/>
+
+	<!--206服务器的主机，用户名，密码-->
+	<property name="www.weblogic.host"       value="10.25.23.211"/>
+	<property name="www.weblogic.user"       value="root"/>
+	<property name="www.weblogic.password"    value="ifc321.com"/>
+
+	<!--清理项目的打包目录，并拷贝项目所有源代码到打包目录-->
+	<property name="build" value="build"></property>
+	<target name="init">
+		<delete dir="${build}" />
+		<mkdir dir="${build}"/>
+		<mkdir dir="${build}\lib"/>
+		<mkdir dir="${build}\res"/>
+		<mkdir dir="${build}\src"/>
+		<copy todir="${build}">
+			<fileset dir="${basedir}">
+				<include name="${basedir}/**" />
+				<include name="**" />
+			</fileset>
+		</copy>
+	</target>
+
+	<!--编译java代码-->
+	<target name="complie" depends="init">
+	</target>
+
+	<!--将172项目打好包的文件发布到206服务器-->
+	<target name="127.to.206" depends="complie" >
+		<sshexec  host="${www.weblogic.host}" username="${www.weblogic.user}" password="${www.weblogic.password}" trust="true"
+				  command="rm -rf ${servicedir}/*"/>
+
+		<scp todir="${www.weblogic.user}@${www.weblogic.host}:${servicedir}" username="${www.weblogic.user}" password="${www.weblogic.password}" trust="true">
+			<fileset dir="${build}">
+				<include name="**/**"/>
+			</fileset>
+		</scp>
+
+	</target>
+</project>    

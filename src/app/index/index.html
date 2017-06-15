@@ -1,0 +1,108 @@
+<style>
+	.header_img img{
+		display: block;
+		border-radius: 50%;
+		width: 1.42rem;
+		height: 1.42rem;
+		margin: 0.71rem 0 0.41rem 3rem;
+	}
+	.content p{
+		text-align: center;
+		font-size: 0.38rem;
+		color: #666666;
+		padding-bottom: 0.2rem;
+	}
+	.accredit_btn{
+		display: block;
+		width: 6.7rem;
+		height: 0.9rem;
+		margin-left: 0.4rem;
+		background: #5A9CF8 ;
+		text-align: center;
+		line-height: 0.9rem;
+		text-decoration: none;
+		border-radius: 0.08rem;
+		color: #fff;
+		font-size: 0.32rem;
+	}
+	.content .content_text{
+		color: #666666;
+		font-size: 0.28rem;
+		padding-bottom: 0.62rem;
+	}
+
+
+.modelBg{
+	position:fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	min-height: 13.34rem;
+	background: rgba(0,0,0,0.3);
+	z-index: 1000;
+}
+
+	.modelBox{
+		width:4.1rem;
+		height: 4rem;
+		background: #FFFFFF;
+		position:absolute;
+		top:3.2rem;
+		left: 0.3rem;
+		z-index:1100;
+		padding: 0 1.4rem;
+	}
+	.VerificationCode{
+		text-align: center;
+		color: #333;
+		font-size: 0.36rem;
+		margin-top: 0.54rem;
+		margin-bottom: 0.764rem;
+	}
+	.modelBox input{
+		display: inline-block;
+		width:0.78rem;
+		height:0.78rem;
+		margin:0 0.075rem;
+		text-align: center;
+		border: 0.01rem #fff solid;
+		background: #DFEDFF;
+	}
+	.modelBox div{
+		margin-top: 0.3rem;
+		text-align: center;
+		color: red;
+		font-size: 0.3rem;
+	}
+	.closeBtn{
+		width: 0.4rem;
+		height: 0.4rem;
+		text-align: center;
+		line-height: 0.4rem;
+		top:0.2rem;
+		left: 6rem;
+		display: block;
+		position: absolute;
+		font-size: 0.38rem;
+		color: #666;
+	}
+</style>
+<div class="content">
+	<div style="background: #f5f5f5;height: 0.2rem"></div>
+	<div class="header_img"><img src="res/img/543.jpg"/></div>
+	<p ng-model="mobile">{{replaceNumber(mobile)}}</p>
+	<p class="content_text">此账号已在联璧金融使用，可直接授权登录汇驿站</p>
+	<a href="" class="accredit_btn" ng-click='getVerificationCode()'>立即授权</a>
+</div>
+<!--验证码弹窗-->
+<div class="modelBg" ng-show="showModel"></div>
+<div class="modelBox" ng-show="showModel" ng-click="">
+	<p class="VerificationCode">输入验证码</p>
+	<i class="iconfont closeBtn" ng-click="closeModel()">&#xe659;</i>
+	<input type="tel" maxlength="1" autofocus  id="beginBtn" ng-model="one" >
+	<input type="tel" maxlength="1"  ng-model="two" >
+	<input type="tel" maxlength="1"  ng-model="three" >
+	<input type="tel" maxlength="1"  ng-model="four">
+	<div id="errorMsg" ng-show="isShow">验证码输入错误，请重新输入</div>
+</div>
