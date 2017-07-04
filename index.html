@@ -25,23 +25,25 @@
  $("#openApp").click(function(){
        openApp()
    })
-   var u = navigator.userAgent;
-   var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Linux') > -1; //android终端或者uc浏览器
-   var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
-   /*android();*/
+
 function openApp(){
+    var u = navigator.userAgent;
+    var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Linux') > -1; //android终端或者uc浏览器
+    var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
+    console.log(isAndroid);
+    console.log(isiOS);
     if(isAndroid) {
-        function android() {
+//        function android() {
             window.location.href ="com.baidu.tieba://";
             /***打开app的协议，有安卓同事提供***/
             window.setTimeout(function () {
                 window.location.href ="https://itunes.apple.com/cn/app/id477927812";
                 /***打开app的协议，有安卓同事提供***/
             }, 2000);
-        };
+//        };
     }
     if(isiOS){
-        function ios(){
+//        function ios(){
             var ifr = document.createElement("iframe");
             ifr.src = "openwjtr://com.tyrbl.wjtr"; /***打开app的协议，有ios同事提供***/
             ifr.style.display = "none";
@@ -50,7 +52,7 @@ function openApp(){
                 document.body.removeChild(ifr);
                 window.location.href = "http://www.wjtr.com/download/index.html"; /***下载app的地址***/
             },2000)
-        };
+//        };
     }
 }
 
