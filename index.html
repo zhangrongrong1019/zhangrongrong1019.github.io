@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background: #003eff;
+        }
+    </style>
+
+</head>
+<body>
+<a href="javascript:;" id="openApp">贴吧客户端</a>
+<script type="text/javascript">
+    document.getElementById('openApp').onclick = function(e){
+        window.location.href = "com.baidu.tieba://";
+        window.setTimeout(function(){
+            window.location.href = "https://itunes.apple.com/cn/app/id477927812";//打开app下载地址，有app同事提供
+        },2000)
+    };
+</script>
+</body>
+</html>
