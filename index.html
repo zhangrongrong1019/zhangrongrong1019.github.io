@@ -2,121 +2,53 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title></title>
-    <style>
-        .box{
-            width: 200px;
-            height: 200px;
-            background: #003eff;
-        }
-    </style>
-
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" >
+    <title>场景日</title>
+    <script  type="text/javascript" src="js/rem.js"></script>
+    <link rel="stylesheet" href="css/changjingri.css">
 </head>
 <body>
-<a href="javascript:;" id="openApp">贴吧客户端</a>
-<script src="jquery-1.11.3.js"></script>
-<script type="text/javascript">
-   /* document.getElementById('openApp').onclick = function(e){
-        window.location.href = "com.baidu.tieba://";
-        window.setTimeout(function(){
-            window.location.href = "https://itunes.apple.com/cn/app/id477927812";//打开app下载地址，有app同事提供
-        },2000)
-    };*/
- $("#openApp").click(function(){
-       openApp()
-   })
+    <!--音频-->
+    <div class="music">
+        <audio class="aud"  src="music/WhereIstheLove.mp3" autoplay="autoplay"></audio>
+        <img class="img" src="img/music.png" />
+    </div>
 
-function openApp(){
-    var u = navigator.userAgent;
-    var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Linux') > -1; //android终端或者uc浏览器
-    var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
-    /*alert(isAndroid);*/
-    alert(isiOS);
-    if(isAndroid) {
-//        function android() {
-            window.location.href ="com.baidu.tieba://";
-            /***打开app的协议，有安卓同事提供***/
-            window.setTimeout(function () {
-                window.location.href ="https://itunes.apple.com/cn/app/id477927812";
-                /***打开app的协议，有安卓同事提供***/
-            }, 2000);
-//        };
-    }
-    if(isiOS){
-//        function ios(){
-            var ifr = document.createElement("iframe");
-            ifr.src = "openwjtr://com.tyrbl.wjtr"; /***打开app的协议，有ios同事提供***/
-            ifr.style.display = "none";
-            document.body.appendChild(ifr);
-            window.setTimeout(function(){
-                document.body.removeChild(ifr);
-                window.location.href = "http://www.wjtr.com/download/index.html"; /***下载app的地址***/
-            },2000)
-//        };
-    }
-}
+    <!--loding页-->
+    <div class="loading"><img src="img/loading.gif"></div>
 
+    <!--这是第一页-->
+    <div class="firstPage">
+        <img src="img/firstPage.gif">
+        <div class="firstBtn"></div>
+    </div>
 
+    <!--这是一张可以拖动的长图-->
+    <div id="touchs">
+        <img class="bgImg" src="img/changjingri.jpg">
+        <img class="hand" src="img/hand.gif">
+        <img class="baopin" src="img/baopinchangjing.gif">
+        <div class="baopinText"><img src="img/fengrenyuan.png"></div>
+        <img class="biaoyan" src="img/biaoyanchangjing.gif">
+        <div class="biaoyanText"><img src="img/fengrenyuan.png"></div>
+        <img class="heying" src="img/fengkuangheying.gif">
+        <img class="wulian" src="img/zhihuiwulian.gif">
+        <img class="PKsai" src="img/changjingPKsai.gif">
+        <div class="PKsaiText"><img src="img/fengrenyuan.png"></div>
+        <img class="jiantou" src="img/jiantou.png">
+        <img class="gongYi" src="img/ertonggongyi.gif">
+        <img class="gongYiText" src="img/gongyiText.png">
+        <img class="changLu" src="img/changjingLu.png">
 
-/*   function infoMore() {
-       var browser = {
-           versions: function() {
-               var u = navigator.userAgent,
-                 app = navigator.appVersion;
-               return { //移动终端浏览器版本信息
-                   weixin:u.match(/MicroMessenger/i) == 'MicroMessenger',
-                   trident: u.indexOf('Trident') > -1, //IE内核
-                   presto: u.indexOf('Presto') > -1, //opera内核
-                   webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
-                   gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
-                   mobile: !!u.match(/AppleWebKit.*Mobile.*!/) || !!u.match(/AppleWebKit/), //是否为移动终端
-                   ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
-                   android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器
-                   iPhone: u.indexOf('iPhone') > -1 || u.indexOf('Mac') > -1, //是否为iPhone或者QQHD浏览器
-                   iPad: u.indexOf('iPad') > -1, //是否iPad
-                   webApp: u.indexOf('Safari') == -1 //是否web应该程序，没有头部与底部
-               };
-           }(),
-           language: (navigator.browserLanguage || navigator.language).toLowerCase()
-       }
-
-       if(browser.versions.android && browser.versions.webKit){
-//安卓
-           window.location = "http://域名/abc.apk";
-       }
-       if(browser.versions.ios || browser.versions.iPhone || browser.versions.iPad){ //IOS
-           window.location = "https://itunes.apple.com/cn/app/!***********!/id1037684721?l=zh&ls=1&mt=8";
-       }
-       if(browser.versions.weixin && browser.versions.android){
-//微信安卓
-           window.location = "http://app.qq.com/#id=detail&appid=1101069854";
-       }
-       if(browser.versions.weixin && browser.versions.ios || browser.versions.iPhone || browser.versions.iPad){
-//微信IOS
-           window.location = "http://app.qq.com/#id=detail&appid=1101069854";
-       }
-
-   }*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</script>
+        <div class="video-js">
+            <iframe frameborder="0" src="https://v.qq.com/iframe/player.html?vid=r05228g830q&tiny=0&auto=0" allowfullscreen></iframe>
+        </div>
+    </div>
+<script src="js/zepto.min.js"></script>
+<script src="js/index.js"></script>
+<script src ='js/drag.js'></script>
+    <script>
+        new Drag('touchs')
+    </script>
 </body>
 </html>

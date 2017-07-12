@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.loading{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.loading img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.music{
+    width: 0.8rem;
+    height:0.8rem;
+   /* background: red;*/
+    position:absolute;
+    top: 1rem;
+    right: 0.5rem;
+    text-align: center;
+    z-index:10 ;
+}
+.music img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    -webkit-animation: _music 2s linear infinite;
+    -moz-animation: _music 2s linear infinite;
+    -ms-animation: _music 2s linear infinite;
+    -o-animation: _music 2s linear infinite;
+    animation: _music 2s linear infinite;
+}
+@-webkit-keyframes _music{
+    from{
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform:rotate(0deg);
+        transform:rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform:rotate(360deg);
+        transform:rotate(360deg);
+    }
+}
+.firstPage{
+    display: none;
+}
+.firstPage img{
+    display:block;
+    width: 100%;
+    height: 100%;
+}
+.firstBtn{
+    width: 1rem;
+    height: 0.8rem;
+    position: absolute;
+    left: 3rem;
+    bottom: 0.5rem;
+    /*background: red;*/
+    z-index: 5;
+}
+
+#touchs{
+    display: none;
+    position: absolute;
+    left: 0rem;
+    top: 0rem;
+    width: 52rem;
+    height:13.34rem;
+}
+#touchs .bgImg{
+    width: 100%;
+    height: 100%;
+}
+#touchs .hand{
+    width: 2.6rem;
+    height:2.4rem;
+    position: absolute;
+    left: 1.9rem;
+    top: 8.6rem;
+    z-index: 5;
+}
+#touchs img{
+    display: block;
+    height: 100%;
+}
+#touchs .baopin {
+    width: 3.4rem;
+    height: 3.7rem;
+    position: absolute;
+    left: 6.5rem;
+    top: 3.6rem;
+    z-index: 5;
+}
+#touchs .baopinText{
+    position: absolute;
+    left: 8.8rem;
+    top: 8rem;
+    z-index: 7;
+}
+#touchs .baopinText img{
+    display: block;
+    width: 2rem;
+    height:0.7rem;
+}
+#touchs .biaoyan{
+    width: 2.7rem;
+    height: 5.2rem;
+    position: absolute;
+    left: 14rem;
+    top: 6.2rem;
+    z-index: 5;
+}
+#touchs .biaoyanText{
+
+    position: absolute;
+    background: red;
+    left: 12.8rem;
+    top: 9.15rem;
+    z-index: 6;
+}
+#touchs .biaoyanText img{
+    display: block;
+    width: 0.5rem;
+    height: 2.9rem;
+}
+#touchs .heying{
+    width: 3.75rem;
+    height: 4rem;
+    position: absolute;
+    left: 19rem;
+    top: 3.2rem;
+    z-index: 5;
+}
+#touchs .wulian{
+    width: 2.7rem;
+    height: 5.1rem;
+    position: absolute;
+    left: 25.8rem;
+    top: 5.4rem;
+    z-index: 5;
+}
+#touchs .PKsai{
+    width: 3.15rem;
+    height: 6rem;
+    position: absolute;
+    left: 30.6rem;
+    top: 1.5rem;
+    z-index: 5;
+}
+#touchs .PKsaiText{
+
+    position: absolute;
+    left: 31.65rem;
+    background: red;
+    top: 7.65rem;
+    z-index: 6;
+}
+#touchs .PKsaiText img{
+    display: block;
+    width: 1.65rem;
+    height:0.65rem;
+}
+
+#touchs .jiantou{
+    width: 1.5rem;
+    height: 1rem;
+    position: absolute;
+    left: 30.4rem;
+    top: 7rem;
+    z-index: 6;
+}
+#touchs .gongYi{
+    width: 3.45rem;
+    height: 6.5rem;
+    position: absolute;
+    left: 36.8rem;
+    top: 1rem;
+    z-index: 5;
+}
+#touchs .gongYiText{
+    width: 2.4rem;
+    height:2.3rem;
+    position: absolute;
+    left: 35.7rem;
+    top: 0.25rem;
+    z-index: 6;
+}
+#touchs .changLu{
+    width: 2.85rem;
+    height:6.55rem;
+    position: absolute;
+    left: 35.8rem;
+    top: 6rem;
+    z-index: 6;
+}
+#touchs .video{
+    width: 1rem;
+    height:1rem;
+    position: absolute;
+    left: 43rem;
+    top: 5.5rem;
+    z-index: 5;
+}
+#touchs .video-js{
+    position: absolute;
+    left: 41.5rem;
+    top:4.3rem;
+    z-index: 7;
+}
+#touchs .video-js iframe{
+    width:4.2rem ;
+    height: 3.3rem;
+}
