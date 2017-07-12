@@ -107,13 +107,14 @@ html,body{
     top:2.8rem;
     z-index: 5;
 }
-#touchs .baopinText{
+/*#touchs .baopinText{
+
+}*/
+#touchs .baopinText img{
     position: absolute;
     left: 8.8rem;
-    top: 7.2rem;
+    top: 7rem;
     z-index: 7;
-}
-#touchs .baopinText img{
     display: block;
     width: 2rem;
     height:0.7rem;
@@ -128,13 +129,13 @@ html,body{
 }
 #touchs .biaoyanText{
 
+
+}
+#touchs .biaoyanText img{
     position: absolute;
-    background: red;
     left: 12.8rem;
     top: 8.05rem;
     z-index: 6;
-}
-#touchs .biaoyanText img{
     display: block;
     width: 0.5rem;
     height: 2.9rem;
@@ -165,16 +166,16 @@ html,body{
 }
 #touchs .PKsaiText{
 
-    position: absolute;
-    left: 31.65rem;
-    background: red;
-    top: 7.05rem;
-    z-index: 6;
+
 }
 #touchs .PKsaiText img{
     display: block;
     width: 1.65rem;
     height:0.65rem;
+    position: absolute;
+    left: 31.65rem;
+    top: 7.05rem;
+    z-index: 6;
 }
 
 #touchs .jiantou{
@@ -227,3 +228,4 @@ html,body{
     width:4.2rem ;
     height: 3.3rem;
 }
+.in{display:block;}

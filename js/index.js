@@ -25,8 +25,48 @@ setTimeout(function(){
         $(".firstPage").css("display","none")
         $("#touchs").css("display","block")
     })
-    /**/
-
+    /*爆品场景文字切换*/
+    $(".baopinText img:not(:first)").css("display","none");//只显示第一张图片，其它隐藏
+    var last = $(".baopinText img:last");
+    var first = $(".baopinText img:first");
+    setInterval(function(){
+        if(last.is(":visible")){
+            first.fadeIn(400).addClass("in");
+            last.hide();
+        }else{
+            $(".baopinText img:visible").addClass("in");
+            $(".baopinText img.in").next().fadeIn(400);
+            $(".baopinText img.in").fadeOut(400).removeClass("in");
+        }
+    },2000);
+    /*表演场景文字切换*/
+    $(".biaoyanText img:not(:first)").css("display","none");//只显示第一张图片，其它隐藏
+    var last1 = $(".biaoyanText img:last");
+    var first1 = $(".biaoyanText img:first");
+    setInterval(function(){
+        if(last1.is(":visible")){
+            first1.fadeIn(400).addClass("in");
+            last1.hide();
+        }else{
+            $(".biaoyanText img:visible").addClass("in");
+            $(".biaoyanText img.in").next().fadeIn(400);
+            $(".biaoyanText img.in").fadeOut(400).removeClass("in");
+        }
+    },1500);
+    /*PK赛场景文字切换*/
+    $(".PKsaiText img:not(:first)").css("display","none");//只显示第一张图片，其它隐藏
+    var last2 = $(".PKsaiText img:last");
+    var first2 = $(".PKsaiText img:first");
+    setInterval(function(){
+        if(last2.is(":visible")){
+            first2.fadeIn(500).addClass("in");
+            last2.hide();
+        }else{
+            $(".PKsaiText img:visible").addClass("in");
+            $(".PKsaiText img.in").next().fadeIn(500);
+            $(".PKsaiText img.in").fadeOut(500).removeClass("in");
+        }
+    },2000);
 
     wx.onMenuShareTimeline({
         title: 'asdfasd', // 分享标题
