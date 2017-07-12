@@ -92,7 +92,7 @@ html,body{
     height:2.4rem;
     position: absolute;
     left: 1.9rem;
-    top: 8.6rem;
+    top: 8.4rem;
     z-index: 5;
 }
 #touchs img{
@@ -104,13 +104,13 @@ html,body{
     height: 3.7rem;
     position: absolute;
     left: 6.5rem;
-    top: 3.6rem;
+    top: 3.4rem;
     z-index: 5;
 }
 #touchs .baopinText{
     position: absolute;
     left: 8.8rem;
-    top: 8rem;
+    top: 7.8rem;
     z-index: 7;
 }
 #touchs .baopinText img{
@@ -123,7 +123,7 @@ html,body{
     height: 5.2rem;
     position: absolute;
     left: 14rem;
-    top: 6.2rem;
+    top: 6rem;
     z-index: 5;
 }
 #touchs .biaoyanText{
@@ -131,7 +131,7 @@ html,body{
     position: absolute;
     background: red;
     left: 12.8rem;
-    top: 9.15rem;
+    top: 8.95rem;
     z-index: 6;
 }
 #touchs .biaoyanText img{
@@ -144,7 +144,7 @@ html,body{
     height: 4rem;
     position: absolute;
     left: 19rem;
-    top: 3.2rem;
+    top: 3rem;
     z-index: 5;
 }
 #touchs .wulian{
@@ -160,7 +160,7 @@ html,body{
     height: 6rem;
     position: absolute;
     left: 30.6rem;
-    top: 1.5rem;
+    top: 1.3rem;
     z-index: 5;
 }
 #touchs .PKsaiText{
@@ -168,7 +168,7 @@ html,body{
     position: absolute;
     left: 31.65rem;
     background: red;
-    top: 7.65rem;
+    top: 7.45rem;
     z-index: 6;
 }
 #touchs .PKsaiText img{
@@ -182,7 +182,7 @@ html,body{
     height: 1rem;
     position: absolute;
     left: 30.4rem;
-    top: 7rem;
+    top: 6.8rem;
     z-index: 6;
 }
 #touchs .gongYi{
@@ -190,7 +190,7 @@ html,body{
     height: 6.5rem;
     position: absolute;
     left: 36.8rem;
-    top: 1rem;
+    top: 0.8rem;
     z-index: 5;
 }
 #touchs .gongYiText{
@@ -198,7 +198,7 @@ html,body{
     height:2.3rem;
     position: absolute;
     left: 35.7rem;
-    top: 0.25rem;
+    top: 0.05rem;
     z-index: 6;
 }
 #touchs .changLu{
@@ -206,7 +206,7 @@ html,body{
     height:6.55rem;
     position: absolute;
     left: 35.8rem;
-    top: 6rem;
+    top: 5.8rem;
     z-index: 6;
 }
 #touchs .video{
@@ -214,13 +214,13 @@ html,body{
     height:1rem;
     position: absolute;
     left: 43rem;
-    top: 5.5rem;
+    top: 5.3rem;
     z-index: 5;
 }
 #touchs .video-js{
     position: absolute;
     left: 41.5rem;
-    top:4.3rem;
+    top:4.1rem;
     z-index: 7;
 }
 #touchs .video-js iframe{
