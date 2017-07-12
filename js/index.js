@@ -8,12 +8,11 @@
     music.addEventListener("click",function(){
         if(aud.paused){
             aud.play()
-            _img.style.animationPlayState="running"
-            _img.style.webkitAnimationPlayState="running"
+            _img.setAttribute("class", "startMusic");
         }else{
             aud.pause()
-            _img.style.webkitAnimationPlayState="paused"
-            _img.style.animationPlayState="paused"
+            _img.setAttribute("class", "stopMusic");
+           /* _img.style.animationPlayState="paused"*/
 //			this.style.opacity=0
         }
     })

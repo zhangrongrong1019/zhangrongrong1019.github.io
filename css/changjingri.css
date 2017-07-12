@@ -75,6 +75,15 @@ to{
 
 }
 }
+
+.stopMusic{
+    animation-play-state:paused;
+    -webkit-animation-play-state:paused; /* Safari ºÍ Chrome */
+}
+.startMusic{
+    animation-play-state:running;
+    -webkit-animation-play-state:running; /* Safari ºÍ Chrome */
+}
 .firstPage{
     display: none;
     width: 100%;
