@@ -22,7 +22,7 @@ html,body{
     width: 0.8rem;
     height:0.8rem;
    /* background: red;*/
-    position:absolute;
+    position:fixed;
     top: 1rem;
     right: 0.5rem;
     text-align: center;
@@ -78,7 +78,7 @@ html,body{
     left: 0rem;
     top: 0rem;
     width: 52rem;
-    height:13.34rem;
+    height:100%;
 }
 #touchs .bgImg{
     width: 100%;
