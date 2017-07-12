@@ -101,10 +101,10 @@ html,body{
 }
 #touchs .baopin {
     width: 3.4rem;
-    height: 3.7rem;
+    height: 2.9rem;
     position: absolute;
     left: 6.5rem;
-    top: 2.8rem;
+    top: 3.6rem;
     z-index: 5;
 }
 #touchs .baopinText{
