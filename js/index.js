@@ -21,7 +21,7 @@ setTimeout(function(){
     $(".firstPage").css("display","block")
 },3000)
 /*点击手势，页面跳转*/
-    $(".firstBtn").click(function(){
+    $(".firstPage").click(function(){
         $(".firstPage").css("display","none")
         $("#touchs").css("display","block")
     })
