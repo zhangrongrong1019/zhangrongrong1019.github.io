@@ -110,7 +110,7 @@ html,body{
 #touchs .baopinText{
     position: absolute;
     left: 8.8rem;
-    top: 7.8rem;
+    top: 7.2rem;
     z-index: 7;
 }
 #touchs .baopinText img{
@@ -131,7 +131,7 @@ html,body{
     position: absolute;
     background: red;
     left: 12.8rem;
-    top: 8.95rem;
+    top: 8.05rem;
     z-index: 6;
 }
 #touchs .biaoyanText img{
@@ -168,7 +168,7 @@ html,body{
     position: absolute;
     left: 31.65rem;
     background: red;
-    top: 7.45rem;
+    top: 7.05rem;
     z-index: 6;
 }
 #touchs .PKsaiText img{
