@@ -64,8 +64,9 @@
     	var self=this;
     	this.elem.addEventListener("touchstart",start,false);
     	function start(event){
-			self.maxWidth=parseFloat(self.getStyle('width'))-document.body.clientWidth
+			event.preventDefault()
 
+			self.maxWidth=parseFloat(self.getStyle('width'))-document.body.clientWidth
 			var touch = event.touches[0];
     		self.startX=touch.pageX;
     		self.startY=touch.pageY;
@@ -87,9 +88,13 @@
                     x:(self.sourceX+distanceX).toFixed(),
                     y:(self.sourceY+distanceY).toFixed()
     		    })
-    	}
+			event.preventDefault()
+
+		}
     	function end(event){
-              document.removeEventListener('touchmove',move);
+			event.preventDefault()
+
+			document.removeEventListener('touchmove',move);
               document.removeEventListener('touchend',end)
     	}
     }
