@@ -23,8 +23,8 @@ html,body{
     height:0.8rem;
    /* background: red;*/
     position:fixed;
-    top: 1rem;
-    right: 0.5rem;
+    top: 0.5rem;
+    right: 0.3rem;
     text-align: center;
     z-index:10 ;
 }
@@ -80,7 +80,7 @@ html,body{
     position: absolute;
     left: 0rem;
     top: 0rem;
-    width: 52rem;
+    width: 74.43rem;
     height:100%;
 }
 #touchs .bgImg{
@@ -91,7 +91,7 @@ html,body{
     width: 2.6rem;
     height:2.4rem;
     position: absolute;
-    left: 1.9rem;
+    left: 3.1rem;
     top: 7.5rem;
     z-index: 5;
 }
@@ -100,10 +100,10 @@ html,body{
     height: 100%;
 }
 #touchs .baopin {
-    width: 3.4rem;
+    width: 4.9rem;
     height: 3.6rem;
     position: absolute;
-    left: 6.5rem;
+    left: 9.3rem;
     top:2.8rem;
     z-index: 5;
 }
@@ -112,68 +112,61 @@ html,body{
 }*/
 #touchs .baopinText img{
     position: absolute;
-    left: 8.8rem;
+    left: 12.6rem;
     top: 7rem;
     z-index: 7;
     display: block;
-    width: 2rem;
+    width: 2.9rem;
     height:0.7rem;
 }
 #touchs .biaoyan{
-    width: 2.7rem;
+    width:3.9rem;
     height: 5.2rem;
     position: absolute;
-    left: 14rem;
+    left: 20.1rem;
     top: 5.1rem;
     z-index: 5;
 }
-#touchs .biaoyanText{
-
-
-}
 #touchs .biaoyanText img{
     position: absolute;
-    left: 12.8rem;
+    left: 18.38rem;
     top: 8.05rem;
     z-index: 6;
     display: block;
-    width: 0.5rem;
+    width: 0.65rem;
     height: 2.9rem;
 }
 #touchs .heying{
-    width: 3.75rem;
+    width: 5.3rem;
     height: 4rem;
     position: absolute;
-    left: 19rem;
+    left: 27.2rem;
     top: 2.5rem;
     z-index: 5;
 }
 #touchs .wulian{
-    width: 2.7rem;
+    width: 3.8rem;
     height: 5.1rem;
     position: absolute;
-    left: 25.8rem;
+    left: 36.93rem;
     top: 4.5rem;
     z-index: 5;
 }
 #touchs .PKsai{
-    width: 3.15rem;
+    width: 4.5rem;
     height: 6rem;
     position: absolute;
-    left: 30.6rem;
+    left: 43.80rem;
     top: 0.9rem;
     z-index: 5;
 }
-#touchs .PKsaiText{
 
-
-}
 #touchs .PKsaiText img{
     display: block;
-    width: 1.65rem;
+    width: 2rem;
     height:0.65rem;
     position: absolute;
-    left: 31.65rem;
+    left: 45.35rem;
     top: 7.05rem;
     z-index: 6;
 }
@@ -182,31 +175,31 @@ html,body{
     width: 1.5rem;
     height: 1rem;
     position: absolute;
-    left: 30.4rem;
-    top: 7.9rem;
+    left: 43.75rem;
+    top: 7rem;
     z-index: 6;
 }
 #touchs .gongYi{
-    width: 3.45rem;
+    width: 4.9rem;
     height: 6.5rem;
     position: absolute;
-    left: 36.8rem;
+    left: 52.58rem;
     top: 0.8rem;
     z-index: 5;
 }
 #touchs .gongYiText{
-    width: 2.4rem;
+    width: 2.8rem;
     height:2.3rem;
     position: absolute;
-    left: 35.7rem;
+    left: 51.15rem;
     top: 0.05rem;
     z-index: 6;
 }
 #touchs .changLu{
-    width: 2.85rem;
+    width: 3.4rem;
     height:6.55rem;
     position: absolute;
-    left: 35.8rem;
+    left: 51.2rem;
     top: 4.9rem;
     z-index: 6;
 }
@@ -220,12 +213,12 @@ html,body{
 }
 #touchs .video-js{
     position: absolute;
-    left: 41.5rem;
+    left: 59.4rem;
     top:3.5rem;
     z-index: 7;
 }
 #touchs .video-js iframe{
-    width:4.2rem ;
+    width:5.9rem ;
     height: 3.3rem;
 }
 .in{display:block;}
