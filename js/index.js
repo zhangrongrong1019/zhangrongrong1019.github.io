@@ -9,8 +9,10 @@
         if(aud.paused){
             aud.play()
             _img.style.animationPlayState="running"
+            _img.style.webkitAnimationPlayState="running"
         }else{
             aud.pause()
+            _img.style.webkitAnimationPlayState="paused"
             _img.style.animationPlayState="paused"
 //			this.style.opacity=0
         }
