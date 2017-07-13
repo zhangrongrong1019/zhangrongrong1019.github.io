@@ -2,19 +2,22 @@
  * Created by Admin on 2017/7/11.
  */
 (function(){
+    var isPlay = true;
     var music=document.querySelector(".music");
     var aud=document.querySelector(".aud");
     var _img=$(".img");
     aud.play();
     music.addEventListener("touchstart",function(){
-        if(aud.paused){
+        if(!isPlay){
             aud.play();
+            isPlay = true;
             _img.css({'-webkit-animation-play-state':'running','animation-play-state':'running'});
             //_img.style.animationPlayState="running"
             //_img.style.webkitAnimationPlayState="running"
             /*  _img.setAttribute("class", "startMusic");*/
         }else{
             aud.pause();
+            isPlay = false;
             _img.css({'-webkit-animation-play-state':'paused','animation-play-state':'paused'});
             //_img.style.animationPlayState="paused"
             //_img.style.webkitAnimationPlayState="paused"
