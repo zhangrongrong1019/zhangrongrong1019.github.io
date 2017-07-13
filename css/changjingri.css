@@ -37,45 +37,57 @@ html,body{
     -moz-animation: _music 2s linear infinite;
     -ms-animation: _music 2s linear infinite;
     -o-animation: _music 2s linear infinite;
+    animation-play-state: running;
+}
 
+@keyframes _music{
+    from{
+        transform:rotate(0deg);
+        /*-webkit-transform: rotate(0deg);*/
+        /*-moz-transform: rotate(0deg);*/
+        /*-ms-transform: rotate(0deg);*/
+        /*-o-transform:rotate(0deg);*/
+    }
+    to{
+        transform:rotate(360deg);
+        /*-webkit-transform: rotate(360deg);*/
+        /*-moz-transform: rotate(360deg);*/
+        /*-ms-transform: rotate(360deg);*/
+        /*-o-transform:rotate(360deg);*/
+    }
 }
 @-webkit-keyframes _music{
     from{
         transform:rotate(0deg);
         -webkit-transform: rotate(0deg);
-        -moz-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-        -o-transform:rotate(0deg);
-
+        /*-moz-transform: rotate(0deg);*/
+        /*-ms-transform: rotate(0deg);*/
+        /*-o-transform:rotate(0deg);*/
     }
     to{
         transform:rotate(360deg);
         -webkit-transform: rotate(360deg);
-        -moz-transform: rotate(360deg);
-        -ms-transform: rotate(360deg);
-        -o-transform:rotate(360deg);
-
+        /*-moz-transform: rotate(360deg);*/
+        /*-ms-transform: rotate(360deg);*/
+        /*-o-transform:rotate(360deg);*/
     }
 }
-@keyframes _music{
-from{
-    transform:rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform:rotate(0deg);
-
+@-moz-keyframes _music{
+    from{
+        transform:rotate(0deg);
+        /*-webkit-transform: rotate(0deg);*/
+        -moz-transform: rotate(0deg);
+        /*-ms-transform: rotate(0deg);*/
+        /*-o-transform:rotate(0deg);*/
+    }
+    to{
+        transform:rotate(360deg);
+        /*-webkit-transform: rotate(360deg);*/
+        -moz-transform: rotate(360deg);
+        /*-ms-transform: rotate(360deg);*/
+        /*-o-transform:rotate(360deg);*/
+    }
 }
-to{
-    transform:rotate(360deg);
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    -o-transform:rotate(360deg);
-
-}
-}
-
 .stopMusic{
     animation-play-state:paused;
     -webkit-animation-play-state:paused; /* Safari ºÍ Chrome */

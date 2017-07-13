@@ -2,21 +2,24 @@
  * Created by Admin on 2017/7/11.
  */
 (function(){
-    var music=document.querySelector(".music")
-    var aud=document.querySelector(".aud")
-    var _img=document.querySelector(".img")
+    var music=document.querySelector(".music");
+    var aud=document.querySelector(".aud");
+    var _img=$(".img");
+    //aud.play();
     music.addEventListener("touchstart",function(){
         if(aud.paused){
-            aud.play()
-            _img.style.animationPlayState="running"
-            _img.style.webkitAnimationPlayState="running"
-          /*  _img.setAttribute("class", "startMusic");*/
+            aud.play();
+            _img.css({'-webkit-animation-play-state':'running','animation-play-state':'running'});
+            //_img.style.animationPlayState="running"
+            //_img.style.webkitAnimationPlayState="running"
+            /*  _img.setAttribute("class", "startMusic");*/
         }else{
-            aud.pause()
-            _img.style.animationPlayState="paused"
-            _img.style.webkitAnimationPlayState="paused"
-           /* _img.setAttribute("class", "stopMusic");*/
-           /* _img.style.animationPlayState="paused"*/
+            aud.pause();
+            _img.css({'-webkit-animation-play-state':'paused','animation-play-state':'paused'});
+            //_img.style.animationPlayState="paused"
+            //_img.style.webkitAnimationPlayState="paused"
+            /* _img.setAttribute("class", "stopMusic");*/
+            /* _img.style.animationPlayState="paused"*/
 //			this.style.opacity=0
         }
     })
