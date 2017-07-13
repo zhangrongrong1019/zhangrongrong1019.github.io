@@ -6,6 +6,9 @@
     var aud=document.querySelector(".aud");
     var _img=document.querySelector(".img")
     aud.play();
+    document.addEventListener("WeixinJSBridgeReady", function () {
+        aud.play();
+    }, false);
     music.addEventListener("touchstart",function(){
         if(aud.paused){
             aud.play();

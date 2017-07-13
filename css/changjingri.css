@@ -263,4 +263,15 @@ html,body{
     width:5.9rem ;
     height: 24.74%;
 }
+
+#touchs .erweima{
+    display: block;
+    width: 3.81rem;
+    height:28.56%;
+    position: absolute;
+    left:68.75rem;
+    top:33.36%;
+    z-index: 7;
+}
+
 .in{display:block;}

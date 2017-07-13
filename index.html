@@ -10,7 +10,7 @@
 <body>
     <!--音频-->
     <div class="music">
-        <audio class="aud" autoplay >
+        <audio class="aud" preload="preload" >
             <source src="music/WhereIstheLove1.mp3" type="audio/mp3">
             <source src="music/WhereIstheLove1.ogg" type="audio/ogg">
             您的浏览器不支持 audio 元素。
@@ -35,7 +35,7 @@
     <!--这是一张可以拖动的长图-->
     <div style="overflow: hidden;width: 100%;height: 100%;position: relative">
         <div id="touchs">
-            <img class="bgImg" src="img/changjingri.jpg">
+            <img class="bgImg" src="img/changjingri2.jpg">
             <img class="hand" src="img/hand.gif">
             <img class="baopin" src="img/baopinchangjing.gif">
             <div class="baopinText">
@@ -69,11 +69,13 @@
             <div class="video-js">
                 <iframe frameborder="0" src="https://v.qq.com/iframe/player.html?vid=r05228g830q&tiny=0&auto=0" allowfullscreen></iframe>
             </div>
+            <img class="erweima" src="img/erweima.jpg">
         </div>
     </div>
 
 <!--<script src="js/zepto.min.js"></script>-->
     <script src="js/jquery-1.11.3.js"></script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
     <!--<script src ='js/weixin.js'></script>-->
 <script src="js/index.js"></script>
 <script src ='js/drag.js'></script>
