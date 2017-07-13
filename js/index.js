@@ -5,7 +5,7 @@
     var music=document.querySelector(".music");
     var aud=document.querySelector(".aud");
     var _img=$(".img");
-    //aud.play();
+    aud.play();
     music.addEventListener("touchstart",function(){
         if(aud.paused){
             aud.play();
