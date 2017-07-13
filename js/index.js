@@ -27,7 +27,7 @@
 //			this.style.opacity=0
         }
     })
-/*2秒后loading页消失*/
+/*3秒后loading页消失*/
 setTimeout(function(){
     $(".loading").css("display","none")
     $(".firstPage").css("display","block")
