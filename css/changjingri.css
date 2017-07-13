@@ -186,6 +186,15 @@ html,body{
     top:24.2%;
     z-index: 5;
 }
+#touchs .heyingLogo{
+    display: block;
+    width: 0.55rem;
+    height: 4.12%;
+    position: absolute;
+    left: 27.2rem;
+    top:24.2%;
+    z-index: 5;
+}
 #touchs .wulian{
     width: 3.8rem;
     height: 39%;
@@ -256,7 +265,7 @@ html,body{
 #touchs .video-js{
     position: absolute;
     left: 59.4rem;
-    top:33%;
+    top:32%;
     z-index: 7;
 }
 #touchs .video-js iframe{
@@ -266,7 +275,7 @@ html,body{
 
 #touchs .erweima{
     display: block;
-    width: 3.81rem;
+    width: 3.5rem;
     height:28.56%;
     position: absolute;
     left:68.75rem;
