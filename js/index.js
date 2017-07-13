@@ -6,7 +6,10 @@
     var music=document.querySelector(".music");
     var aud=document.querySelector(".aud");
     var _img=$(".img");
-    aud.play();
+    setTimeout(function(){
+        aud.play();
+    },100);
+
     music.addEventListener("touchstart",function(){
         if(!isPlay){
             aud.play();
@@ -17,7 +20,6 @@
             /*  _img.setAttribute("class", "startMusic");*/
         }else{
             aud.pause();
-            isPlay = false;
             _img.css({'-webkit-animation-play-state':'paused','animation-play-state':'paused'});
             //_img.style.animationPlayState="paused"
             //_img.style.webkitAnimationPlayState="paused"
