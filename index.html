@@ -3,14 +3,23 @@
 <head lang="en">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" >
-    <title>场景日</title>
+    <title>来来来来来场景日激情show</title>
     <script  type="text/javascript" src="js/rem.js"></script>
     <link rel="stylesheet" href="css/changjingri.css">
 </head>
 <body>
     <!--音频-->
     <div class="music">
-        <audio class="aud"  src="music/WhereIstheLove1.mp3" autoplay="autoplay"></audio>
+        <audio class="aud" autoplay >
+            <source src="music/WhereIstheLove1.ogg" type="audio/ogg">
+            <source src="music/WhereIstheLove1.mp3" type="audio/mpeg">
+            您的浏览器不支持 audio 元素。
+        </audio>
+
+
+       <!-- <audio class="aud"  src="music/WhereIstheLove1.mp3" autoplay="autoplay" type="audio/mpeg"></audio>
+        <audio class="aud"  src="music/WhereIstheLove1.ogg" autoplay="autoplay" type="audio/ogg"></audio>-->
+        <!--<audio class="aud"  src="music/WhereIstheLove1.ogg" autoplay="autoplay" type="audio/og"></audio>-->
         <img class="img" src="img/music.png" />
     </div>
 
@@ -65,9 +74,10 @@
 
 <!--<script src="js/zepto.min.js"></script>-->
     <script src="js/jquery-1.11.3.js"></script>
+    <!--<script src ='js/weixin.js'></script>-->
 <script src="js/index.js"></script>
 <script src ='js/drag.js'></script>
-<script src ='js/weixin.js'></script>
+
     <script>
         new Drag('touchs')
     </script>

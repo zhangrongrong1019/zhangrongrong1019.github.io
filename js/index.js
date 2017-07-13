@@ -5,7 +5,7 @@
     var music=document.querySelector(".music")
     var aud=document.querySelector(".aud")
     var _img=document.querySelector(".img")
-    music.addEventListener("click",function(){
+    music.addEventListener("touchstart",function(){
         if(aud.paused){
             aud.play()
             _img.style.animationPlayState="running"
@@ -73,7 +73,7 @@ setTimeout(function(){
         }
     },2000);
 
-    wx.onMenuShareTimeline({
+   /* wx.onMenuShareTimeline({
         title: 'asdfasd', // 分享标题
         desc: 'asdfasd', // 分享描述
         link: "zhangrongrong1019.github.io", // 分享链接
@@ -103,6 +103,6 @@ setTimeout(function(){
             // 用户取消分享后执行的回调函数
             //errorMessage("未分享");
         }
-    });
+    });*/
 
 })()
