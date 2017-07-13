@@ -142,12 +142,18 @@ html,body{
     height: 100%;
 }
 #touchs .baopin {
-    width: 4.9rem;
+    width: 4.85rem;
+    height: 3.62rem;
+    position: absolute;
+    left: 9.33rem;
+    top: 3.63rem;
+    z-index: 5;
+   /* width: 4.9rem;
     height: 3.6rem;
     position: absolute;
     left: 9.3rem;
     top:2.8rem;
-    z-index: 5;
+    z-index: 5;*/
 }
 /*#touchs .baopinText{
 
